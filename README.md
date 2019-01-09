@@ -6,8 +6,8 @@ Please use this url to access the application.
 https://todopercipia-cwh8b4.c9users.io/lists
 
 
-Creating the to do list in ruby on rails is a very easy.  
-to begin setting up the databse model you run the command
+Creating the to do list in ruby on rails is very easy.  
+To begin setting up the databse model you run the command
 
 rails g scaffold lists description:string completed:boolean
 
