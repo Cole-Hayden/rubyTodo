@@ -1,24 +1,18 @@
-
-     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    ----------------------------------------------------------------- 
+I used the Cloud9 ide which spins up your personal linux environment to run the ruby on rails application. 
 
 
-Welcome to your Rails project on Cloud9 IDE!
+Please use this url to access the application.
 
-To get started, just do the following:
-
-1. Run the project with the "Run Project" button in the menu bar on top of the IDE.
-2. Preview your new app by clicking on the URL that appears in the Run panel below (https://HOSTNAME/).
-
-Happy coding!
-The Cloud9 IDE team
+https://todopercipia-cwh8b4.c9users.io/lists
 
 
-## Support & Documentation
+Creating the to do list in ruby on rails is a very easy.  
+to begin setting up the databse model you run the command
 
-Visit http://docs.c9.io for support, or to learn more about using Cloud9 IDE. 
-To watch some training videos, visit http://www.youtube.com/user/c9ide
+rails g scaffold lists description:string completed:boolean
+
+Then you have to migrate your database model by running the command
+
+rake db:migrate
+
+After running the command rake routes, your routes are created and your to do list is completed.
