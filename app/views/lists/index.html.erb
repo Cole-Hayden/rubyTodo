@@ -1,6 +1,6 @@
 
 
-<h1>To Do List</h1>
+<h1>Todo List</h1>
 
 <center>
 <div class="card" style="width: 18rem;">
@@ -22,7 +22,7 @@
         <td class="striker"><%= link_to list.description, edit_list_path(list) %><% list.description %></td>
         <td>
         <% link_to 'Show', list %>
-        Created <%= time_ago_in_words(list.created_at)%> ago
+        Created <%= (list.created_at)%> ago
         <% link_to 'Edit', edit_list_path(list) %>
        <center><%= link_to 'Delete', list, method: :delete, data: { confirm: 'Are you sure?' } %></td></center>
       </tr>
@@ -31,7 +31,7 @@
         <td><%= link_to list.description, edit_list_path(list) %><% list.description %></td>
         <td>
         <% link_to 'Show', list %>
-        Created <%= time_ago_in_words(list.created_at)%> ago
+        Created <%= (list.created_at)%> ago
         <% link_to 'Edit', edit_list_path(list) %>
         <center><%= link_to 'Delete', list,  method: :delete, data: { confirm: 'Are you sure?' } %></td></center>
       </tr>
@@ -42,5 +42,5 @@
 </table>
 
 <br>
+<p>Click on todo description to edit</p>
 
-<%= link_to 'Add Todo Item', new_list_path %>
