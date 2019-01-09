@@ -16,3 +16,5 @@ Then you have to migrate your database model by running the command
 rake db:migrate
 
 After running the command rake routes, your routes are created and your to do list is completed.
+
+In order to deploy on your own server, you would have to sign up for the cloud9 ide and then merge the code into your repo and run the application.
